@@ -1,0 +1,11 @@
+n = int(input("Enter the number of elements: "))
+a = list(map(int, input("Enter the numbers: ").split()))
+
+for num in a:
+    temp = num
+
+    while temp >= 10:
+        temp = temp // 10
+
+    if temp == 1:
+        print(num)
